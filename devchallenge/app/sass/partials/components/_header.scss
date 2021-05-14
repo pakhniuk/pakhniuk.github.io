@@ -1,0 +1,302 @@
+.header {
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		width: 100%;
+		margin: 0px auto;
+		padding: 0px 30px;
+		border: 1px solid $grey;
+		border-top: none;
+	}
+
+	&__burger {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		width: 85%;
+	}
+
+	&__logo {
+		display: flex;
+		align-self: center;
+	}
+
+	&__site-controls {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-end;
+		width: 145px;
+		height: 117px;
+		padding: 10px 0px 25px 18px;
+	}
+
+	&__like-btn {
+		font: 15px $plumb_condensed-regular;
+		color: #fff;
+
+		svg {
+			vertical-align: middle;
+			width: 27px;
+			height: 24px;
+		}
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__login {
+		font: 15px $plumb_condensed-regular;
+		color: $font-color;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 3px;
+
+		svg {
+			width: 31px;
+			height: 26px;
+			display: block;
+    		margin: 0px auto 7px;
+			fill: currentColor;
+		}
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+.menu {
+	display: flex;
+	&__item {
+		position: relative;
+		height: 117px;
+		font: 15px $plumb_condensed-regular;
+		text-transform: uppercase;
+
+		&--active {
+			
+			.menu__link {
+				background: #fff;
+			}
+		}
+
+		&:last-child {
+			border-right: 1px solid $grey;
+		}
+
+		&--login {
+			display: none;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 75px 13px 0px;
+		border-left: 1px solid $grey;
+		color: $font-color;
+		text-decoration: none;
+		letter-spacing: 3px;
+
+		&:hover {
+			background: #fff;
+			box-shadow: 3px 4px 15px #b7924f;
+		}
+	}
+}
+
+.hamburger-slim {
+	display: none;
+	background: transparent;
+	position: relative;
+	height: 30px;
+	width: 50px;
+	border: none;
+	outline: none;
+	margin-bottom: 20px;
+    margin-left: 24px;
+}
+
+.hamburger-slim:before, .hamburger-slim:after {
+    background: #000;
+    backface-visibility: hidden;
+    content: "";
+    height: 2px;
+    left: 0;
+    transition: 0.75s;
+    width: 50px; 
+}
+.hamburger-slim:before {
+    box-shadow: #000 0 14px 0 0;
+    position: absolute;
+    top: 0; 
+}
+.hamburger-slim:after {
+    position: absolute;
+    top: -webkit-calc(100% - 2px);
+    top: calc(100% - 2px); 
+}
+.hamburger-slim:hover {
+    opacity: .7; 
+}
+
+#hamburger-slim[type="checkbox"] {
+	display: none;
+}
+
+#hamburger-slim:checked + label.hamburger-slim::before {
+    box-shadow: transparent 0 0 0 0;
+  	top: 50%;
+    transform: rotate(225deg);
+}
+	
+#hamburger-slim:checked + label.hamburger-slim::after {
+  	top: 50%;
+    transform: rotate(315deg);
+}
+
+@media screen and (min-width: 1024px) {
+	.header__menu {
+		display: flex!important;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.header {
+		.menu {
+			height: 100vh;
+
+			&__item {
+				display: block;
+				height: auto;
+				padding: 0px 15px;
+				text-align: center;
+				border-top: none;
+				box-sizing: border-box;
+
+				&--login {
+					display: none;
+				}
+			}
+
+			&__link {
+				padding: 25px 0px;
+				border-right: 1px solid $grey;
+				border-left: 1px solid $grey;
+			}
+		}
+
+		&__site-controls {
+			padding-bottom: 17px;
+		}
+
+		&__column {
+			justify-content: flex-end;
+		}
+
+		&__select {
+			position: absolute;
+			right: 38px;
+			top: 23px;
+		}
+
+		&__menu {
+			display: none;
+			width: 100%;
+			position: absolute;
+			left: 0px;
+			top: 118px;
+			flex-direction: column;
+			background: $orange;
+			z-index: 1;
+		}
+	}
+
+	.hamburger-slim {
+	    display: block;
+	    order: 1;
+	}
+
+	#hamburger-slim:checked ~ .header__burger .header__menu {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		&__content {
+			padding: 0px 10px;
+		}
+
+		&__logo {
+			img {
+				width: 150px;
+			}
+		}
+
+		&__login {
+			display: none;
+		}
+
+		&__site-controls {
+			width: auto;
+		}
+
+		.menu {
+			
+			&__item {
+
+				&--login {
+					display: block;
+				}
+			}
+
+		}
+	}
+	.hamburger-slim {
+		margin: 0px 30px 20px 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		&__logo {
+			img {
+				width: 87px;
+			}
+		}
+
+		&__select {
+			right: 28px;
+		}
+
+		&__site-controls {
+		    padding-bottom: 23px;
+		}
+
+		&__form {
+			display: none;
+		}
+
+		.menu {
+
+			&__link {
+				padding: 15px 0px;
+			}
+		}
+	}
+
+	.hamburger-slim {
+		transform: scale(0.5);
+		margin-right: 15px;
+	}
+}

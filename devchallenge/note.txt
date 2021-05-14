@@ -1,0 +1,23 @@
+1. npm i gulp -g  //install gulp globally (this means, gulp will install somewhere in your system)
+2. npm init // create a basic file manifest, answer all necessary questions, and package.json will appear in the root
+3. npm i gulp --save-dev // figure out with this shit
+4. create gulpfile.js in the root directory
+5. npm i gulp-sass --save-dev - install sass (--save-del - save all and version inside gulp file)
+6. npm install browser-sync --save-dev - sync all your changes in the browsers
+7. npm i -g bower
+8. create in the root .bowerrc file inside this file {"directory": "app/libs"} - direction where will be installed libs
+9. bower i jquery magnific-popup - install libraries from bower
+10. npm i gulp-concat gulp-uglifyjs --save-dev
+11. npm i gulp-cssnano gulp-rename --save-dev - minification css and rename
+12. npm i --save-dev gulp-imagemin imagemin-pngquant - img optimization (installing can take a while)
+13. npm i gulp-cache --save-dev - cache pictures for more quick build process
+14. npm i --save-dev gulp-autoprefixer
+15. npm install gulp-compass --save-dev
+
+// watch and scripts - it's my title
+gulp watch - watch all changes
+gulp scripts - uglify, concat all js
+build build - build you app
+
+
+Try to copy this project to another place (it shouldn't work), for correct last try nmp i in root folder, should install all dependensies from package.json

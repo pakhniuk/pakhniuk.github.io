@@ -1,0 +1,34 @@
+.slider-controls {
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 65px;
+	height: 65px;
+	background: #000;
+	color: #fff;
+	font: 12px $plumb_condensed-regular;
+	letter-spacing: 3px;
+	text-align: center;
+	line-height: 65px;
+	text-transform: uppercase;
+	cursor: pointer;
+	z-index: 1;
+
+	&-radio {
+		display: none;
+	}
+
+	&:hover {
+		background: #fff;
+		color: #000;
+	}
+
+	&--prev {
+		left: 0px;
+		transform: translateY(-50%) rotate(-90deg);
+	}
+	&--next {
+		right: 0px;
+		transform: translateY(-50%) rotate(90deg);
+	}
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" viewBox="0 0 38 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1a1a1a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 0.3px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_more" class="cls-1" d="M0.646,1.353l0.707-.707,18,18-0.707.707Zm36.529-.238,0.709,0.71L19.825,19.885l-0.709-.71Z"/>
+</svg>

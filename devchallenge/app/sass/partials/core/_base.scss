@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+html, body {
+  width: 100%;
+  height: auto!important;
+  margin: 0px;
+  padding: 0px;
+  font: 14px $plumb-regular, Arial sans-serif;
+  color: #000;
+  line-height: 1.4;
+  text-decoration-skip: ink;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0px; 
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
+}
+.wrapp-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0px auto;
+}

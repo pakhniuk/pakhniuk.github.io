@@ -1,0 +1,46 @@
+//
+@import "partials/core/normolize";
+//
+@import "partials/variables/variables";
+@import "partials/core/base";
+//
+@import "partials/components/header";
+@import "partials/components/form-components";
+@import "partials/components/footer";
+@import "partials/components/loader";
+@import "partials/components/slider-controls";
+// 
+@import "partials/1.landing/main-banner";
+@import "partials/1.landing/products";
+@import "partials/1.landing/deteil-info";
+@import "partials/1.landing/simular-products";
+
+@font-face {
+    font-family: 'Plumb-Regular';
+    src: url('../fonts/plumb-regular/Plumb-Regular.eot');
+    src: url('../fonts/plumb-regular/Plumb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/plumb-regular/Plumb-Regular.woff') format('woff'),
+        url('../fonts/plumb-regular/Plumb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlumbCondensed-Black';
+    src: url('../fonts/plumbcondensed-black/PlumbCondensed-Black.eot');
+    src: url('../fonts/plumbcondensed-black/PlumbCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/plumbcondensed-black/PlumbCondensed-Black.woff') format('woff'),
+        url('../fonts/plumbcondensed-black/PlumbCondensed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlumbCondensed-Regular';
+    src: url('../fonts/plumbcondensed-regular/PlumbCondensed-Regular.eot');
+    src: url('../fonts/plumbcondensed-regular/PlumbCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/plumbcondensed-regular/PlumbCondensed-Regular.woff') format('woff'),
+        url('../fonts/plumbcondensed-regular/PlumbCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

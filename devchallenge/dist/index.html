@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="img/sprite/symbol/css/sprite.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="wrapp-content">
+            <div class="header__content">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="logo" height="105" width="140">
+                </a>
+                <input type="checkbox" name="hamburger-slim" id="hamburger-slim">
+                <label class="hamburger-slim" for="hamburger-slim"></label>
+                <div class="header__burger">
+                    <form caction="" method="post" class="form-search header__form">
+                        <input type="text" name="search" class="form-search__input" placeholder="Назва проекта" required minlength="2" maxlength="50" />
+                        <button class="btn btn-clear btn--search">
+                            <svg class="svg-search-glass-dims">
+                                <use xlink:href="file:///C:/Users/Aliona/Documents/dev-challenge/devchallenge-second/dist/img/sprite/sprite.svg#search-glass"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <nav>
+                        <ul class="header__menu menu">
+                            <li class="menu__item menu__item--active">
+                                <a href="#" class="menu__link">Волонтерство</a>
+                            </li>
+                            <li class="menu__item menu__item">
+                                <a href="#" class="menu__link">Підбір проекта</a>
+                            </li>
+                            <li class="menu__item menu__item">
+                                <a href="#" class="menu__link">Стан проектів</a>
+                            </li>
+                            <li class="menu__item menu__item">
+                                <a href="#" class="menu__link">Новини</a>
+                            </li>
+                            <li class="menu__item menu__item menu__item--login">
+                                <a href="#" class="menu__link">Увійти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__site-controls">
+                        <div class="header__like-btn">
+                            <svg class="svg-heart-bold-dims">
+                                <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                            </svg>
+                            <span>2</span>
+                        </div>
+                        <div class="header__column">
+                            <select class="header__select select-language">
+                                <option value="Uk">Ук</option>
+                            </select>
+                            <a href="#" class="header__login">
+                                <svg class="svg-login-dims">
+                                    <use xlink:href="img/sprite/sprite.svg#login"></use>
+                                </svg>
+                                Увійти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- section main screen -->
+    <section class="main-banner">
+        <div class="wrapp-content">
+            <div class="main-banner__content">
+                <input type="radio" name="main-slider" class="slider-controls-radio" id="prev">
+                <label class="slider-controls slider-controls--prev" for="prev">Prev</label>
+                <input type="radio" name="main-slider" class="slider-controls-radio" id="next">
+                <label class="slider-controls slider-controls--next" for="next">Next</label>
+                <div class="main-banner__slider-content slider-content">
+                    <div class="slider-content__item">
+                        <div>
+                            <p class="slider-content__title">Найбільша в Україні біржа добра</p>
+                            <p class="slider-content__description">допомагати просто</p>
+                        </div>
+                        <img src="img/main-slider/dog-slide.png" alt="Поряд">
+                    </div>
+                    <div class="slider-content__item">
+                        <div>
+                            <p class="slider-content__title">Найбільша в Україні біржа добра</p>
+                            <p class="slider-content__description">допомагати просто</p>
+                        </div>
+                        <img src="img/main-slider/grandpa-slide.png" alt="Поряд">
+                    </div>
+                </div>
+                <div class="main-banner__anchor-description">Притулки для тварин</div>
+                <a href="#products" class="main-banner__anchor" role="button">
+                    <svg class="svg-arrow-dims">
+                        <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section products -->
+    <section class="products" id="products">
+        <div class="wrapp-content">
+            <div class="products__content">
+                <input type="checkbox" name="hamburger-filter" id="hamburger-filter">
+                <label class="hamburger-filter" for="hamburger-filter">
+                    <svg class="svg-filter-dims">
+                        <use xlink:href="img/sprite/sprite.svg#filter"></use>
+                    </svg>
+                    <svg class="svg-close-dims">
+                        <use xlink:href="img/sprite/sprite.svg#close"></use>
+                    </svg>
+                </label>
+                <aside id="filters" class="products__filters filters">
+                    <section class="filters__like-checkbox-type">
+                        <p class="filters__title">Підбір допомоги</p>
+                        <form astion="#" method="post" class="filters__form">
+                            <button class="filters__btn btn btn-clear" type="button">Прибрати параметри пошуку</button>
+                            <p class="filters__wrapp">
+                                <input type="radio" name="selection-assistance" id="finance" class="">
+                                <label class="filters__label" for="finance">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Фінансова
+                                </label>
+                                <input type="radio" name="selection-assistance" id="material" class="">
+                                <label class="filters__label" for="material">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Матеріальна
+                                </label>
+                                <input type="radio" name="selection-assistance" id="service" class="">
+                                <label class="filters__label" for="service">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Послуга
+                                </label>
+                            </p>
+                        </form>
+                    </section>
+                    <section class="filters__tab-radio-type">
+                        <form astion="#" method="post" class="filters__form">
+                            <input type="radio" name="selection-assistance" id="animal-shelters" class="">
+                            <label class="filters__label" for="animal-shelters">
+                                Притулки для тварин
+                            </label>
+                            <input type="radio" name="selection-assistance" id="education" class="">
+                            <label class="filters__label" for="education">
+                                Освіта
+                            </label>
+                            <input type="radio" name="selection-assistance" id="disabled" class="">
+                            <label class="filters__label" for="disabled">
+                                Інваліди
+                            </label>
+                            <input type="radio" name="selection-assistance" id="ato" class="">
+                            <label class="filters__label" for="ato">
+                                Переселенці зони АТО
+                            </label>
+                            <input type="radio" name="selection-assistance" id="military" class="">
+                            <label class="filters__label" for="military">
+                                Військові
+                            </label>
+                            <input type="radio" name="selection-assistance" id="elderly" class="">
+                            <label class="filters__label" for="elderly">
+                                Літні люди
+                            </label>
+                            <input type="radio" name="selection-assistance" id="children" class="">
+                            <label class="filters__label" for="children">
+                                Діти
+                            </label>
+                        </form>
+                    </section>
+                    <section class="filters__select">
+                        <form astion="#" method="post" class="filters__form form-select">
+                            <p class="filters__title">Впорядкувати</p>
+                            <svg class="svg-arrow-dims">
+                                <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                            </svg>
+                            <select class="form-select__select">
+                                <option>Останні додані</option>
+                                <option>Перші додані</option>
+                                <option>Всі додані</option>
+                            </select>
+                        </form>
+                    </section>
+                    <section class="filters__like-checkbox-type">
+                        <p class="filters__title">Притулки</p>
+                        <form astion="#" method="post" class="filters__form">
+                            <button class="filters__btn btn btn-clear" type="button">Показати всі позиції</button>
+                            <p class="filters__wrapp">
+                                <input type="checkbox" name="shelters" id="ameda" class="">
+                                <label class="filters__label" for="ameda">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Амеда
+                                </label>
+                                <input type="checkbox" name="shelters" id="sirius" class="">
+                                <label class="filters__label" for="sirius">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Сіріус
+                                </label>
+                                <input type="checkbox" name="shelters" id="charity" class="">
+                                <label class="filters__label" for="charity">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Милосердя
+                                </label>
+                                <input type="checkbox" name="shelters" id="public-initiative" class="">
+                                <label class="filters__label" for="public-initiative">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Громадська ініціатива
+                                </label>
+                                <input type="checkbox" name="shelters" id="tails-paws" class="">
+                                <label class="filters__label" for="tails-paws">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Хвости і лапи
+                                </label>
+                                <input type="checkbox" name="shelters" id="pan-kotsky" class="">
+                                <label class="filters__label" for="pan-kotsky">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Пан коцький
+                                </label>
+                                <input type="checkbox" name="shelters" id="paradise" class="">
+                                <label class="filters__label" for="paradise">
+                                    <span>
+                                        <svg class="svg-heart-regular-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-regular"></use>
+                                        </svg>
+                                    </span>
+                                    Звіринець
+                                </label>
+                            </p>
+                        </form>
+                    </section>
+                </aside>
+                <div class="products__content-list">
+                    <p class="products__title">Притулки для тварин</p>
+                    <ul class="products__list">
+                        <li class="products__item product">
+                            <div class="product__img">
+                                <img src="img/products/product-img-1.jpg">
+                                <div class="product__hover">
+                                    <button class="product__btn-close btn">
+                                        <svg class="svg-close-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <a href="#" class="product__link-info">Info</a>
+                                    <button class="btn btn-clear btn--like">
+                                        <svg class="svg-heart-bold-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__description">
+                                <p>Збираємо кошти на харчування тварин</p>
+                                <p>Притулок Сіріус</p>
+                            </div>
+                            <div class="product__add-info">
+                                <p class="product__presence">сума необмежена</p>
+                                <button class="btn btn-clear product__btn">Допомогти</button>
+                            </div>
+                        </li>
+                        <li class="products__item product">
+                            <div class="product__img">
+                                <img src="img/products/product-img-2.jpg">
+                                <div class="product__hover">
+                                    <button class="product__btn-close btn">
+                                        <svg class="svg-close-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <a href="#" class="product__link-info">Info</a>
+                                    <button class="btn btn-clear btn--like">
+                                        <svg class="svg-heart-bold-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__description">
+                                <p>Необхідно провести вакцинацію собак</p>
+                                <p>Притулок Сіріус</p>
+                            </div>
+                            <div class="product__add-info">
+                                <p class="product__presence">сума необмежена</p>
+                                <button class="btn btn-clear product__btn">Допомогти</button>
+                            </div>
+                        </li>
+                        <li class="products__item product">
+                            <div class="product__img">
+                                <img src="img/products/product-img-3.jpg">
+                                <div class="product__hover">
+                                    <button class="product__btn-close btn">
+                                        <svg class="svg-close-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <a href="#" class="product__link-info">Info</a>
+                                    <button class="btn btn-clear btn--like">
+                                        <svg class="svg-heart-bold-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__description">
+                                <p>Потрібні кошти на лікування Шаріка</p>
+                                <p>Притулок Амеда</p>
+                            </div>
+                            <div class="product__add-info">
+                                <p class="product__presence">сума необмежена</p>
+                                <button class="btn btn-clear product__btn">Допомогти</button>
+                            </div>
+                        </li>
+                        <li class="products__item product">
+                            <div class="product__img">
+                                <img src="img/products/product-img-4.jpg">
+                                <div class="product__hover">
+                                    <button class="product__btn-close btn">
+                                        <svg class="svg-close-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <a href="#" class="product__link-info">Info</a>
+                                    <button class="btn btn-clear btn--like">
+                                        <svg class="svg-heart-bold-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__description">
+                                <p>Допоможіть Мурчику на потез задньої лапи</p>
+                                <p>Притулок Милосердя</p>
+                            </div>
+                            <div class="product__add-info">
+                                <p class="product__presence">сума необмежена</p>
+                                <button class="btn btn-clear product__btn">Допомогти</button>
+                            </div>
+                        </li>
+                        <li class="products__item product">
+                            <div class="product__img">
+                                <img src="img/products/product-img-5.jpg">
+                                <div class="product__hover">
+                                    <button class="product__btn-close btn">
+                                        <svg class="svg-close-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <a href="#" class="product__link-info">Info</a>
+                                    <button class="btn btn-clear btn--like">
+                                        <svg class="svg-heart-bold-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__description">
+                                <p>Збираємо кошти для благоустрою м. Київ</p>
+                                <p>Грамадська ініціатива</p>
+                            </div>
+                            <div class="product__add-info">
+                                <p class="product__presence">сума необмежена</p>
+                                <button class="btn btn-clear product__btn">Допомогти</button>
+                            </div>
+                        </li>
+                        <li class="products__item product">
+                            <div class="product__img">
+                                <img src="img/products/product-img-6.jpg">
+                                <div class="product__hover">
+                                    <button class="product__btn-close btn">
+                                        <svg class="svg-close-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <a href="#" class="product__link-info">Info</a>
+                                    <button class="btn btn-clear btn--like">
+                                        <svg class="svg-heart-bold-dims">
+                                            <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__description">
+                                <p>Збираємо на харчування собак</p>
+                                <p>Притулок Хвости і лапи</p>
+                            </div>
+                            <div class="product__add-info">
+                                <p class="product__presence">сума необмежена</p>
+                                <button class="btn btn-clear product__btn">Допомогти</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="products__loading-content">
+                        <svg class="svg-loader-icon-dims">
+                            <use xlink:href="img/sprite/sprite.svg#loader-icon"></use>
+                        </svg>
+                        <button class="products__btn-more btn btn-clear">
+                            Показати більше позицій
+                        </button>
+                        <div class="products__loader loader">
+                            <div class="loader__dot"></div>
+                            <div class="loader__dot"></div>
+                            <div class="loader__dot"></div>
+                            <div class="loader__dot"></div>
+                            <div class="loader__dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section deteil-info -->
+    <section class="deteil-info">
+        <div class="wrapp-content">
+            <div class="deteil-info__content">
+                <div class="deteil-info__slider slider-product">
+                    <div class="slider-product__content">
+                        <div class="slider-product__img-wrap">
+                            <img src="img/slider/illustartion.jpg">
+                            <div class="slider-product__img-hover">
+                                <input type="radio" name="main-slider" class="slider-controls-radio" id="prev">
+                                <label class="slider-controls slider-controls--prev" for="prev">Prev</label>
+                                <input type="radio" name="main-slider" class="slider-controls-radio" id="next">
+                                <label class="slider-controls slider-controls--next" for="next">Next</label>
+                                <button class="btn btn-clear btn--like">
+                                    <svg class="svg-heart-bold-dims">
+                                        <use xlink:href="img/sprite/sprite.svg#heart-bold"></use>
+                                    </svg>
+                                </button>
+                                <a href="#" class="slider-product__logo">
+                                    <img src="img/slider/illustration-logo.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="slider-product__presence">сума необмежена</p>
+                        <button class="btn btn-clear slider-product__btn">Допомогти</button>
+                    </div>
+                    <div class="deteil-info__text">
+                        <p class="deteil-info__title">Збираэмо кошти на харчування тварин #ДАЙ5!</p>
+                        <p class="deteil-info__product-name">Притулок Сіріус</p>
+                        <p class="deteil-info__market-info">Що можна купити на 5 гривень? Більше, ніж ти думаєш – цілий день ситого життя для одного безпритульного собаки! Ми знову запускаємо естафету #ДАЙ5 і закликаємо всіх підтримати понад дві тисячі вихованців найбільшого в Україні притулку для тварин "Сіріус"</p>
+                        <p class="deteil-info__market-info">Поліпшити умови очікування справжнього дому просто: <br/>перераховуй 5 або більше гривень на картку притулку <br/>Приватбанк </br><span>5169 3305 1043 1114</span>, <br/>Мезінова О. В. (директора притулку) <br/>або через сайт <br/><a href="http://sheltersirius.org" target="_blank">http://sheltersirius.org</a> і передай естафету друзям.</p>
+                        <p class="deteil-info__market-info">Також можна налаштувати регулярний платіж і годувати <br/>хвостів на постійній <br/>основі. Як це зробити, дивись тут: <br/><a href="нgoo.gl/cYzT3Y" target="_blank">нgoo.gl/cYzT3Y</a></p>
+                    </div>
+                </div>
+                <aside class="deteil-info__contacts contacts">
+                    <p class="contacts__title">Контакти <span>Притулок Сіріус</span></p>
+                    <p class="contacts__phone">тел: <a href="tel:+38067 123 45 67">067 123 45 67</a></p>
+                    <div class="contacts__social-net social-net">
+                        <ul>
+                            <li class="social-net__item">
+                                <a href="#" class="social-net__link" target="_blank">
+                                    <svg class="svg-fb-dims">
+                                        <use xlink:href="img/sprite/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-net__item">
+                                <a href="#" class="social-net__link" target="_blank">
+                                    <svg class="svg-vk-dims">
+                                        <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        <a href="www.dogcat.com.ua" class="contacts__link" target="_blank">www.dogcat.com.ua</a>
+                    </p>
+                    <button class="contacts__btn btn btn-clear">Написати нам</button>
+                    <p class="contacts__address">
+                        <span>Україна, Київська область, село Федорівка</span>
+                        <img src="img/map.jpg">
+                    </p>
+                    <a href="#" class="contacts__more-link">Переглянути інші проекти організації</a>
+
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- section simular-products -->
+    <section class="simular-products">
+        <div class="wrapp-content">
+            <div class="simular-products__content">
+                <p class="simular-products__title">Вас можуть зацікавитиt</p>
+                <ul class="simular-products__list">
+                    <li class="simular-products__item">
+                        <a href="#" class="simular-products__link">
+                            <figure>
+                                <img src="img/simular-products/article-img-1.jpg" alt="Волонтерство вихідного дня" />
+                                <figcaption class="simular-products__description">Волонтерство вихідного дня</figcaption>
+                           </figure>
+                        </a>
+                    </li>
+                    <li class="simular-products__item">
+                        <a href="#" class="simular-products__link">
+                            <figure>
+                                <img src="img/simular-products/article-img-2.jpg" alt="Чапік шукає даму серця" />
+                                <figcaption class="simular-products__description">Чапік шукає даму серця</figcaption>
+                           </figure>
+                        </a>
+                    </li>
+                    <li class="simular-products__item">
+                        <a href="#" class="simular-products__link">
+                            <figure>
+                                <img src="img/simular-products/article-img-3.jpg" alt="Нам потрібен старий посуд та підстилки" />
+                                <figcaption class="simular-products__description">Нам потрібен старий посуд та підстилки</figcaption>
+                           </figure>
+                        </a>
+                    </li>
+                    <li class="simular-products__item">
+                        <a href="#" class="simular-products__link">
+                            <figure>
+                                <img src="img/simular-products/article-img-4.jpg" alt="Я Інжир і мені потрібен дім на тиждень" />
+                                <figcaption class="simular-products__description">Я Інжир і мені потрібен дім на тиждень</figcaption>
+                           </figure>
+                        </a>
+                    </li>
+                    <li class="simular-products__item">
+                        <a href="#" class="simular-products__link">
+                            <figure>
+                                <img src="img/simular-products/article-img-5.jpg" alt="Ми вже два місяці як готові дарувати Вам щастя" />
+                                <figcaption class="simular-products__description">Ми вже два місяці як готові дарувати Вам щастя</figcaption>
+                           </figure>
+                        </a>
+                    </li>
+                    <li class="simular-products__item">
+                        <a href="#" class="simular-products__link">
+                            <figure>
+                                <img src="img/simular-products/article-img-6.jpg" alt="Шукаємо сторожа в притулок" />
+                                <figcaption class="simular-products__description">Шукаємо сторожа в притулок</figcaption>
+                           </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- section footer -->
+    <section class="footer">
+        <div class="wrapp-content">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <form action="#" method="post" id="support-form" class="footer__form form-support">
+                        <p class="form-support__title">З питань розміщення проектів заповніть форму</p>
+                        <button class="form-support__btn btn btn-clear">Відправити</button>
+                        <p class="form-support__input-wrap">
+                            <input class="form-support__input" type="text" name="first-name" required minlength="2" maxlength="50" placeholder="Ім'я">
+                        </p>
+                        <p class="form-support__input-wrap">
+                            <input class="form-support__input" type="text" name="last-name" required minlength="2" maxlength="50" placeholder="Прізвище">
+                        </p>
+                        <p class="form-support__input-wrap">
+                            <input class="form-support__input" type="text" name="email" required minlength="2" maxlength="50" placeholder="Email">
+                        </p>
+                        <p class="form-support__input-wrap">
+                            <textarea class="form-support__textarea" name="text" required minlength="2" placeholder="Текст"></textarea> 
+                        </p>
+                        <p class="form-support__validation-info">Всі поля заповняти обов’язково</p>
+                    </form>
+                </div>
+                <div class="footer__column">
+                    <p class="footer__contacts"><span>Телефон</span><a href="tel:+38063 456 78 90">063 456 78 90</a></p>
+                    <p class="footer__contacts"><span>E-mail</span><a href="mailto:info@porjad.gmail.com">info@porjad.gmail.com</a></p>
+                    <p class="footer__subscribe-title">Підпишіться і отримуйте новини про нові проекти та активність у вашому кабінеті</p>
+                    <form action="#" method="post" id="subscribe-form" class="footer__form form-subscribe">
+                        <p class="form-subscribe__input-wrap">
+                            <input class="form-subscribe__input" type="text" name="email" required minlength="2" maxlength="50" placeholder="Email">
+                        </p>
+                        <button class="form-subscribe__btn btn btn-clear">Підписатися</button>
+                    </form>
+                </div>
+                <div class="footer__column footer__column--last">
+                    <div>
+                        <p class="footer__title">Приєднуйтейсь до нас у соціальних мережах</p>
+                        <ul class="footer__social-net">
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link" target="_blank">
+                                    <svg class="svg-fb-dims">
+                                        <use xlink:href="img/sprite/sprite.svg#fb"></use>
+                                    </svg>
+                                    facebook
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link" target="_blank">
+                                    <svg class="svg-vk-dims">
+                                        <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                                    </svg>
+                                    vkontakte
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link" target="_blank">
+                                    <svg class="svg-g-plus-dims">
+                                        <use xlink:href="img/sprite/sprite.svg#g-plus"></use>
+                                    </svg>
+                                    google+
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link" target="_blank">
+                                    <svg class="svg-instagram-dims">
+                                        <use xlink:href="img/sprite/sprite.svg#instagram"></use>
+                                    </svg>
+                                    instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">
+                        <a href="#" class="footer__logo">
+                            <img src="img/logo.svg" alt="logo" height="105" width="140">
+                        </a>
+                        <small>© 2017 Соціальні проекти ‘ПОРЯД’. Всі права захищено.</small>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

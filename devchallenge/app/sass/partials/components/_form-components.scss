@@ -1,0 +1,322 @@
+.btn {
+    position: relative;
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-family: $plumb_condensed-regular;
+    text-decoration: none;
+    transition: all .2s;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-clear {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 9px 10px;
+    color: #000;
+    border: 1px solid $grey;
+    font: 14px $plumb_condensed-regular;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.btn--like {
+    border: none;
+    padding: 0px;
+    margin: 5px;
+   
+    svg {
+        width: 27px;
+        height: 24px;
+    }
+
+    &:hover {
+        svg {
+            color: $orange;
+            fill: $orange;
+        }
+    }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  font: 15px $plumb_condensed-regular;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  font: 15px $plumb_condensed-regular;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  font: 15px $plumb_condensed-regular;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  font: 15px $plumb_condensed-regular;
+}
+
+.form-search {
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    margin-right: 10px;
+
+    &__input {
+        width: 100%;
+        height: 30px;
+        padding: 8px 15px;
+        border: 1px solid $grey;
+        font: 12px $plumb_condensed-regular;
+        color: $font-color;
+        text-transform: uppercase;
+        background: url();
+        margin-bottom: 18px;
+        letter-spacing: 3px;
+
+        &:focus {
+            outline: none;
+            background: #fff;
+            border-color: #fff;
+        }
+    }
+
+    .btn--search {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        border: none;
+        height: 30px;
+        padding: 6px;
+    }
+}
+
+.select-language {
+    padding: 8px 8px 8px 20px;
+    border: 1px solid transparent;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    font: 15px $plumb_condensed-regular;
+    color: #333233;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../img/icons/arrow-select.png) 3px no-repeat;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $grey;
+        box-shadow: 1px 1px 1px $grey;
+    }
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.1) url(../img/icons/arrow-select.png) 3px no-repeat;
+    }
+}
+
+.filters__like-checkbox-type {
+    .filters__form {
+        border: 1px solid $grey;
+    }
+
+    .filters__btn {
+        background: #000;
+        color: #fff;
+        width: 100%;
+        text-align: left;
+
+        &:hover {
+            border-color: $orange;
+            background: $orange;
+            color: #000;
+        }
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        display: none;
+    }
+
+    input:checked + .filters__label {
+        color: $font-color;
+        span {
+            svg {
+                display: inline;
+            }
+        }
+    }
+
+    .filters__label {
+        display: block;
+        margin: 19px 0px;
+        color: #9c9c9c;
+        cursor: pointer;
+        letter-spacing: 1.5px;
+
+        span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 35px;
+            background: $orange;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 34px;
+
+            svg {
+                display: none;
+            }
+        }
+
+        &:hover {
+            color: #000;
+        }
+
+    }
+}
+
+.filters {
+    &__select {
+        svg {
+            width: 20px;
+            height: 10px;
+            transform: rotate(-90deg);
+        }
+
+        .form-select__select {
+            padding: 8px;
+            border: 1px solid transparent;
+            box-shadow: none;
+            background: transparent;
+            background-image: none;
+            -webkit-appearance: none;
+            font: 12px $plumb_condensed-regular;
+            color: #333233;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+
+            &:focus {
+                outline: none;
+                border: 1px solid $grey;
+                box-shadow: 1px 1px 1px $grey;
+            }
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        } 
+    }
+}
+
+.filters__tab-radio-type {
+    input[type="radio"], input[type="checkbox"] {
+        display: none;
+    }
+
+    input:checked + .filters__label {
+        background: $orange;
+    }
+
+    .filters__label {
+        display: inline-block;
+        margin: 0px 5px 10px 0px;
+        padding: 9px 10px;
+        border: 1px solid $grey;
+        cursor: pointer;
+        letter-spacing: 1px;
+
+        &:hover {
+            background: $orange;
+        }
+    }
+}
+
+.form-support {
+    &__input-wrap {
+        width: 100%;
+        margin: 0px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 30px;
+        padding: 0px 10px;
+        border: 1px solid $grey;
+        border-top: none;
+        background: #fff;
+        font: 12px $plumb_condensed-regular;
+        color: #000;
+        letter-spacing: 1px;
+
+        &:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.18);
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 170px;
+        padding: 5px 10px;
+        border: 1px solid $grey;
+        border-top: none;
+        background: #fff;
+        font: 12px $plumb_condensed-regular;
+        color: #000;
+        letter-spacing: 1px;
+        resize: none;
+        overflow: auto;
+
+        &:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.18);
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        background: #000;
+        color: #fff;
+        text-align: left;
+
+        &:hover {
+            background: $grey;
+        }
+    }
+}
+
+.form-subscribe {
+    &__input-wrap {
+        width: 160px;
+        margin: 10px 0px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 30px;
+        padding: 0px 10px;
+        border: 1px solid $grey;
+        background: transparent;
+        font: 12px $plumb_condensed-regular;
+        color: #000;
+        letter-spacing: 1px;
+
+        &:focus {
+            outline: none;
+            background: #fff;
+            border: none;
+        }
+    }
+
+    &__btn {
+        background: #000;
+        color: #fff;
+
+        &:hover {
+            background: $grey;
+        }
+    }
+}

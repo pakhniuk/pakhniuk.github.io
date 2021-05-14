@@ -1,0 +1,44 @@
+.loader {
+  &__dot {
+    animation: expand 1s ease-in-out infinite;
+    border-radius: 50%;
+    display: inline-block;
+    transform-origin: center center;
+    margin: 0px 12px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $grey;
+    background: #eaeaea;
+
+    &:nth-child(1) {
+    }
+
+    &:nth-child(2) {
+      animation-delay: 200ms;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 400ms;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 600ms;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 800ms;
+    }
+  }
+}
+
+
+@keyframes expand {
+  0% {
+    border-color: $grey;
+    background: #eaeaea;
+  }
+  10% {
+    border-color: #000;
+    background: #000;
+  }
+}
